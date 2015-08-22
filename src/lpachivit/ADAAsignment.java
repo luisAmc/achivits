@@ -18,7 +18,7 @@ public class ADAAsignment {
         Scanner sc = new Scanner(System.in);
         System.out.println("Cadena a validar segun ADA:");
         String email = sc.nextLine();
-        Pattern regex = Pattern.compile("[a-zA-Z]+[0-9]*(\\s?[=]\\s?[a-zA-Z0-9]+)*;");
+        Pattern regex = Pattern.compile("([a-zA-Z]+[0-9]*)*(:=([a-zA-Z]+[0-9]*)?[0-9])*;");
         Matcher matcher = regex.matcher(email);
         if (matcher.find())
             System.out.println("Cadena valido!");
