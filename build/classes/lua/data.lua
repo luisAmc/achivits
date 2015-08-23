@@ -23,7 +23,6 @@ result = firstNumber:getValue() + secondNumber:getValue();
 resultLabel = luajava.newInstance( "javax.swing.JLabel");
 resultLabel:setText(result);
 
---Setting bounds
 firstNumber:setBounds(10, 24, 72, 20);
 secondNumber:setBounds(110, 24, 67, 20);
 addLabel:setBounds(92, 27, 8, 14);
@@ -41,8 +40,9 @@ pane:add(resultLabel);
 pane:add(addButton);
 pane:add(closeButton);
 
+constrains = luajava.newInstance("org.netbeans.lib.awtextra.AbsoluteConstraints", 0, 0, 190, 130);
 borderLayout = luajava.bindClass( "java.awt.BorderLayout" );
-frame:getContentPane():add(pane, borderLayout.CENTER );
+frame:getContentPane():add(pane, constrains );
 frame:getContentPane():setBounds(112, 102, 75, 25);
 jframe = luajava.bindClass( "javax.swing.JFrame" );
 frame:setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
