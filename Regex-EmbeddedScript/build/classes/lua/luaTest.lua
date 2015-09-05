@@ -65,12 +65,3 @@ closeListener = luajava.createProxy("java.awt.event.MouseListener",
     end
 });
 closeButton:addMouseListener(closeListener);
-
-local listener = luajava.createProxy("java.awt.event.MouseListener",
-{
-    mouseClicked = function(me)
-        print("clicked!", me)
-    end
-});
-
-frame:addMouseListener(listener);
