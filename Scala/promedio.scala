@@ -3,10 +3,11 @@ object Main {
 		var lista = List(1, 2, 3, 4, 5)
 		println("La lista es: ")
 		lista.foreach(println)
-		println("La longitud de la lista es " + longitud(lista))
+		println("El promedio de la lista es " + promedio(lista))
 	}
 
-	def longitud(l: List[Any]) : Int = {
-		return l.length
+	def promedio(l: List[Double]) : Double = {
+		var retVal:Double = 0
+		l.foreach(elmento =>)
 	}
 }

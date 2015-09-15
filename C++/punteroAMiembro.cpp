@@ -12,7 +12,7 @@ public:
 int main(int argc, char const *argv[])
 {
 	Test test;
-	Test *testPointer;
+	Test *testPointer = &test;
 	
 	int Test::*valor = &Test::valor;
 

@@ -6,14 +6,14 @@ void cambiarValroes(int[]);
 
 int main(int argc, char const *argv[])
 {
-	int[] arreglo = {0, 0, 0, 0, 0};
+	int arreglo[5] = {0, 0, 0, 0, 0};
 	imprimirArreglo(arreglo);
 	cambiarValroes(arreglo);
-	imprimirArreglo(arreglo)
+	imprimirArreglo(arreglo);
 	return 0;
 }
 
-void cambiarValroes(int[] arreglo) {
+void cambiarValroes(int arreglo[]) {
 	arreglo[0] = 1;
 	arreglo[1] = 2;
 	arreglo[2] = 3;
@@ -21,7 +21,7 @@ void cambiarValroes(int[] arreglo) {
 	arreglo[4] = 5;
 }
 
-void imprimirArreglo(int[] arreglo) {
+void imprimirArreglo(int arreglo[]) {
 	for (int index = 0; index < 5; index++)
 		cout << "[" << arreglo[index] << "]";
 	cout << endl;
