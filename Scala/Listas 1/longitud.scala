@@ -10,3 +10,5 @@ object Main {
 		return l.length
 	}
 }
+
+//http://ideone.com/mFnmMk
